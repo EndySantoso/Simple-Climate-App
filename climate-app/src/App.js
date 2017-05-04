@@ -58,7 +58,7 @@ class App extends Component {
           <option value='London'>London</option>
         </select>
 
-        <table className='table table-hover'>
+        <table className='table table-hover animated bounce'>
           <tr>
             <th>{this.state.city}</th>
             <th>Temperature</th>
@@ -69,7 +69,7 @@ class App extends Component {
             let variance = this._getVariance(data.temp.max, data.temp.min)
 
             return (
-              <tr key={index}>
+              <tr key={index} className='animated pulse'>
                 <td>{convertDate}</td>
                 <td>{data.temp.day}C</td>
                 <td>{variance}C</td>
